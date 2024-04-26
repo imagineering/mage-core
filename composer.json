@@ -1,0 +1,35 @@
+{
+    "name": "imagineering/mage-core",
+    "description": "Imagineering Core Module is necessary for all other Imagineering extensions to work properly",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "GPL-3.0",
+    "homepage": "https://www.imagineering.rs",
+    "time": "2024-01-12 14:17:43",
+    "authors": [
+        {
+            "name": "Vladimir Đurović",
+            "email": "vladimir@imagineering.rs",
+            "homepage": "https://www.imagineering.com",
+            "role": "Magento Developer"
+        }
+    ],
+    "support": {
+        "email": "vladimir@imagineering.rs"
+    },
+    "keywords": [
+        "imagineering",
+        "magento",
+        "core"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Imagineering\\Core\\": ""
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}

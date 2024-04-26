@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Imagineering
+ *
+ * This source file is subject to the Imagineering License, which is available at https://www.imagineering.rs/.
+ * Do not edit or add to this file if you wish to upgrade to the newer versions in the future.
+ * If you wish to customize this module for your needs,
+ * Please refer to https://business.adobe.com/products/magento/magento-commerce.html for more information.
+ *
+ * @category    Imagineering
+ * @package     Imagineering_Core
+ * @copyright   Copyright (c) Imagineering (https://www.imagineering.rs/)
+ * @link        https://www.imagineering.rs/
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="imagineering" translate="label" sortOrder="402" class="imagineering-extensions">
+            <label>Imagineering</label>
+        </tab>
+        <section id="imagineering" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Information</label>
+            <tab>imagineering</tab>
+            <resource>Imagineering_Core::configuration</resource>
+            <group id="information" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Information</label>
+                <frontend_model>Imagineering\Core\Block\Adminhtml\Config\Form\Field\Information</frontend_model>
+            </group>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Configuration</label>
+                <field id="menu" translate="label comment" type="select" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable Imagineering Menu</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <backend_model>Imagineering\Core\Model\Config\Backend\Menu</backend_model>
+                    <comment>If yes, the Imagineering menu will be displayed on the admin navigation. All the Imagineering module menu will be displayed there.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
